@@ -777,11 +777,6 @@
                     </label>
 
                     <label class="checkbox-button">
-                        <input type="checkbox" id="rifle_triggerbot" name="rifle_triggerbot" onchange="updateServerBoolWithWeapon('rifle_triggerbot','triggerbot',  'rifle')">
-                        Triggerbot<span></span>
-                    </label>
-
-                    <label class="checkbox-button">
                         <input type="checkbox" id="rifle_updateFOV" name="urifle_pdateFOV" onchange="updateServerBoolWithWeapon('rifle_updateFOV','fov_circle', 'rifle')">
                         Field of View (FOV)<span></span>
                     </label>
@@ -952,8 +947,6 @@
                             <button id="rifle_secondaryKeybindButton" class="setKeybindButton">Set Secondary Keybind for Rifle</button>
                             <div id="rifle_secondaryDisplayKeybind" class="keybindDisplay">Secondary Key: None</div>
 
-                            <button id="rifle_triggerbotKeybindButton" class="setKeybindButton">Set Triggerbot Keybind for Rifle</button>
-                            <div id="rifle_triggerbotDisplayKeybind" class="keybindDisplay">Triggerbot Key: None</div>
                         </div>
                     </div>
                     
@@ -972,10 +965,6 @@
                         <input type="range" id="rifle_customSlider4" name="rifle_customSlider4" min="0" max="400" value="250" class="dark-slider" oninput="updateServerVarWithWeapon('rifle_customSlider4','distance', 'rifle','rifle_aimDistance')">
                     </div> 
 
-                    <div class="alligned-container">
-                        Triggerbot Delay (ms): <span id="rifle_triggerbotDelay">5</span>
-                        <input type="range" id="rifle_customSlider5" name="rifle_customSlider5" min="0" max="400" value="5" class="dark-slider" oninput="updateServerVarWithWeapon('rifle_customSlider5','triggerbot_delay', 'rifle','rifle_triggerbotDelay')">
-                    </div>
                 </div>
 
                 <div id="shotgun-config" class="weapon-config-section">
@@ -997,10 +986,6 @@
                         Aim at Knocked<span></span>
                     </label>
 
-                    <label class="checkbox-button">
-                        <input type="checkbox" id="shotgun_triggerbot" name="shotgun_triggerbot" onchange="updateServerBoolWithWeapon('shotgun_triggerbot','triggerbot',  'shotgun')">
-                        Triggerbot<span></span>
-                    </label>
 
                     <label class="checkbox-button">
                         <input type="checkbox" id="shotgun_updateFOV" name="ushotgun_pdateFOV" onchange="updateServerBoolWithWeapon('shotgun_updateFOV','fov_circle', 'shotgun')">
@@ -1173,8 +1158,6 @@
                             <button id="shotgun_secondaryKeybindButton" class="setKeybindButton">Set Secondary Keybind for Shotgun</button>
                             <div id="shotgun_secondaryDisplayKeybind" class="keybindDisplay">Secondary Key: None</div>
 
-                            <button id="shotgun_triggerbotKeybindButton" class="setKeybindButton">Set Triggerbot Keybind for Shotgun</button>
-                            <div id="shotgun_triggerbotDisplayKeybind" class="keybindDisplay">Triggerbot Key: None</div>
                         </div>
                     </div>
                     
@@ -1193,10 +1176,6 @@
                         <input type="range" id="shotgun_customSlider4" name="shotgun_customSlider4" min="0" max="400" value="250" class="dark-slider" oninput="updateServerVarWithWeapon('shotgun_customSlider4','distance', 'shotgun','shotgun_aimDistance')">
                     </div> 
 
-                    <div class="alligned-container">
-                        Triggerbot Delay (ms): <span id="shotgun_triggerbotDelay">5</span>
-                        <input type="range" id="shotgun_customSlider5" name="shotgun_customSlider5" min="0" max="400" value="5" class="dark-slider" oninput="updateServerVarWithWeapon('shotgun_customSlider5','triggerbot_delay', 'shotgun','shotgun_triggerbotDelay')">
-                    </div>
                 </div>
 
                 <div id="smg-config" class="weapon-config-section">
@@ -1218,11 +1197,6 @@
                     <label class="checkbox-button">
                         <input type="checkbox" id="smg_aim_at_knocked" name="smg_aim_at_knocked" onchange="updateServerBoolWithWeapon('smg_aim_at_knocked','aimatknocked',  'smg')">
                         Aim at Knocked<span></span>
-                    </label>
-
-                    <label class="checkbox-button">
-                        <input type="checkbox" id="smg_triggerbot" name="smg_triggerbot" onchange="updateServerBoolWithWeapon('smg_triggerbot','triggerbot',  'smg')">
-                        Triggerbot<span></span>
                     </label>
 
                     <label class="checkbox-button">
@@ -1396,8 +1370,6 @@
                             <button id="smg_secondaryKeybindButton" class="setKeybindButton">Set Secondary Keybind for Smg</button>
                             <div id="smg_secondaryDisplayKeybind" class="keybindDisplay">Secondary Key: None</div>
                             
-                            <button id="smg_triggerbotKeybindButton" class="setKeybindButton">Set Triggerbot Keybind for Smg</button>
-                            <div id="smg_triggerbotDisplayKeybind" class="keybindDisplay">Triggerbot Key: None</div>
                         </div>
                     </div>
     
@@ -1417,10 +1389,6 @@
                         <input type="range" id="smg_customSlider4" name="smg_customSlider4" min="0" max="400" value="250" class="dark-slider" oninput="updateServerVarWithWeapon('smg_customSlider4','distance', 'smg','smg_aimDistance')">
                     </div> 
 
-                    <div class="alligned-container">
-                        Triggerbot Delay (ms): <span id="smg_triggerbotDelay">5</span>
-                        <input type="range" id="smg_customSlider5" name="smg_customSlider5" min="0" max="400" value="5" class="dark-slider" oninput="updateServerVarWithWeapon('smg_customSlider5','triggerbot_delay', 'smg','smg_triggerbotDelay')">
-                    </div>
                 </div>
 
                 <div id="pistol-config" class="weapon-config-section">
@@ -1442,11 +1410,6 @@
                         Aim at Knocked<span></span>
                     </label>
 
-                    <label class="checkbox-button">
-                        <input type="checkbox" id="pistol_triggerbot" name="pistol_triggerbot" onchange="updateServerBoolWithWeapon('pistol_triggerbot','triggerbot',  'pistol')">
-                        Triggerbot<span></span>
-                    </label>
-                    
                     <label class="checkbox-button">
                         <input type="checkbox" id="pistol_updateFOV" name="upistol_pdateFOV" onchange="updateServerBoolWithWeapon('pistol_updateFOV','fov_circle', 'pistol')">
                         Field of View (FOV)<span></span>
@@ -1617,9 +1580,6 @@
 
                             <button id="pistol_secondaryKeybindButton" class="setKeybindButton">Set Secondary Keybind for Pistol</button>
                             <div id="pistol_secondaryDisplayKeybind" class="keybindDisplay">Secondary Key: None</div>
-                            
-                            <button id="pistol_triggerbotKeybindButton" class="setKeybindButton">Set Triggerbot Keybind for Pistol</button>
-                            <div id="pistol_triggerbotDisplayKeybind" class="keybindDisplay">Triggerbot Key: None</div>
                         </div>
                     </div>
 
@@ -1637,11 +1597,6 @@
                     <div class="alligned-container">
                         Aim Distance: <span id="pistol_aimDistance">180</span>
                         <input type="range" id="pistol_customSlider4" name="pistol_customSlider4" min="0" max="400" value="250" class="dark-slider" oninput="updateServerVarWithWeapon('pistol_customSlider4','distance', 'pistol','pistol_aimDistance')">
-                    </div>
-
-                    <div class="alligned-container">
-                        Triggerbot Delay (ms): <span id="pistol_triggerbotDelay">5</span>
-                        <input type="range" id="pistol_customSlider5" name="pistol_customSlider5" min="0" max="400" value="5" class="dark-slider" oninput="updateServerVarWithWeapon('pistol_customSlider5','triggerbot_delay', 'pistol','pistol_triggerbotDelay')">
                     </div>
                 </div>
 
@@ -1662,11 +1617,6 @@
                     <label class="checkbox-button">
                         <input type="checkbox" id="sniper_aim_at_knocked" name="sniper_aim_at_knocked" onchange="updateServerBoolWithWeapon('sniper_aim_at_knocked','aimatknocked',  'sniper')">
                         Aim at Knocked<span></span>
-                    </label>
-
-                    <label class="checkbox-button">
-                        <input type="checkbox" id="sniper_triggerbot" name="sniper_triggerbot" onchange="updateServerBoolWithWeapon('sniper_triggerbot','triggerbot',  'sniper')">
-                        Triggerbot<span></span>
                     </label>
                     
                     <label class="checkbox-button">
@@ -1840,8 +1790,6 @@
                             <button id="sniper_secondaryKeybindButton" class="setKeybindButton">Set Secondary Keybind for Sniper</button>
                             <div id="sniper_secondaryDisplayKeybind" class="keybindDisplay">Secondary Key: None</div>
                         
-                            <button id="sniper_triggerbotKeybindButton" class="setKeybindButton">Set Triggerbot Keybind for Sniper</button>
-                            <div id="sniper_triggerbotDisplayKeybind" class="keybindDisplay">Triggerbot Key: None</div>
                         </div>
                     </div>
                     
@@ -1860,10 +1808,6 @@
                         <input type="range" id="sniper_customSlider4" name="sniper_customSlider4" min="0" max="400" value="250" class="dark-slider" oninput="updateServerVarWithWeapon('sniper_customSlider4','distance', 'sniper','sniper_aimDistance')">
                     </div> 
 
-                    <div class="alligned-container">
-                        Triggerbot Delay (ms): <span id="sniper_triggerbotDelay">5</span>
-                        <input type="range" id="sniper_customSlider5" name="sniper_customSlider5" min="0" max="400" value="5" class="dark-slider" oninput="updateServerVarWithWeapon('sniper_customSlider5','triggerbot_delay', 'sniper','sniper_triggerbotDelay')">
-                    </div>
                 </div>
 
                 <div id="otherguns-config" class="weapon-config-section">
@@ -1887,10 +1831,6 @@
                         Aim at Knocked<span></span>
                     </label>
 
-                    <label class="checkbox-button">
-                        <input type="checkbox" id="otherguns_triggerbot" name="otherguns_triggerbot" onchange="updateServerBoolWithWeapon('otherguns_triggerbot','triggerbot',  'otherguns')">
-                        Triggerbot<span></span>
-                    </label>
                     
                     <label class="checkbox-button">
                         <input type="checkbox" id="otherguns_updateFOV" name="otherguns_updateFOV" onchange="updateServerBoolWithWeapon('otherguns_updateFOV','fov_circle', 'otherguns')">
@@ -2063,8 +2003,6 @@
                             <button id="otherguns_secondaryKeybindButton" class="setKeybindButton">Set Secondary Keybind for Other Guns</button>
                             <div id="otherguns_secondaryDisplayKeybind" class="keybindDisplay">Secondary Key: None</div>
 
-                            <button id="otherguns_triggerbotKeybindButton" class="setKeybindButton">Set Triggerbot Keybind for Other Guns</button>
-                            <div id="otherguns_triggerbotDisplayKeybind" class="keybindDisplay">Triggerbot Key: None</div>
                         </div>
                     </div>
     
@@ -2082,11 +2020,6 @@
                         Aim Distance: <span id="otherguns_aimDistance">170</span>
                         <input type="range" id="otherguns_customSlider4" name="otherguns_customSlider4" min="0" max="400" value="250" class="dark-slider" oninput="updateServerVarWithWeapon('otherguns_customSlider4','distance', 'otherguns','otherguns_aimDistance')">
                     </div> 
-
-                    <div class="alligned-container">
-                        Triggerbot Delay (ms): <span id="otherguns_triggerbotDelay">5</span>
-                        <input type="range" id="otherguns_customSlider5" name="otherguns_customSlider5" min="0" max="400" value="5" class="dark-slider" oninput="updateServerVarWithWeapon('otherguns_customSlider5','triggerbot_delay', 'otherguns','sotherguns_triggerbotDelay')">
-                    </div>
                 </div>
             </div>        
         </div>
@@ -2099,9 +2032,6 @@
                 <div class="alligned-container">
                     <div class="visual-tabs">
                         <button class="visual-tab-button" onclick="switchVisualConfig('player')">Player</button>
-                        <button class="visual-tab-button" onclick="switchVisualConfig('world')">World</button>
-                        <button class="visual-tab-button" onclick="switchVisualConfig('radar')">Radar</button>
-                        <button class="visual-tab-button active" onclick="switchVisualConfig('font')">Font</button>
                     </div>
                 </div>
 
